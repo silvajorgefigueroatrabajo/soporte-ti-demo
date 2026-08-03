@@ -7,7 +7,7 @@ services:
     autoDeployTrigger: commit
     envVars:
       - key: APP_NAME
-        value: Nexo Soporte
+        value: Sistema de Gestión de Soporte TI
       - key: APP_ENV
         value: production
       - key: APP_DEBUG

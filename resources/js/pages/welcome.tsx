@@ -19,7 +19,7 @@ export default function Welcome() {
 
     return (
         <>
-            <Head title="Nexo Soporte" />
+            <Head title="Sistema de Gestión de Soporte TI" />
             <main className="relative min-h-screen overflow-hidden bg-slate-950 text-white">
                 <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(16,185,129,0.16),transparent_28%),radial-gradient(circle_at_85%_30%,rgba(59,130,246,0.16),transparent_32%)]" />
                 <div className="pointer-events-none absolute inset-0 [background-image:linear-gradient(rgba(255,255,255,.8)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.8)_1px,transparent_1px)] [background-size:48px_48px] opacity-[0.035]" />
@@ -32,7 +32,7 @@ export default function Welcome() {
                             </div>
                             <div>
                                 <div className="font-semibold tracking-tight">
-                                    Nexo Soporte
+                                    Sistema de Gestión de Soporte TI
                                 </div>
                                 <div className="text-xs text-slate-400">
                                     Demo operativa ficticia
@@ -193,7 +193,7 @@ export default function Welcome() {
 
                     <footer className="flex flex-col gap-2 border-t border-white/10 py-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
                         <span>
-                            Nexo Soporte &middot; Registro y seguimiento
+                            Sistema de Gestión de Soporte TI &middot; Registro y seguimiento
                             operacional
                         </span>
                         <span>Demostración pública con datos sintéticos</span>

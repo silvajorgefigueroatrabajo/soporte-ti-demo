@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Nexo Soporte'),
+    'name' => env('APP_NAME', 'Sistema de Gestión de Soporte TI'),
 
     /*
     |--------------------------------------------------------------------------

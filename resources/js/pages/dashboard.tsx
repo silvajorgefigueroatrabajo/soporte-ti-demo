@@ -116,7 +116,7 @@ export default function Dashboard({
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                     <div>
                         <h1 className="text-2xl font-semibold tracking-tight">
-                            Dashboard Nexo Soporte
+                            Gestión de Soporte TI
                         </h1>
                         <p className="text-sm text-muted-foreground">
                             Resumen mensual de casos registrados.

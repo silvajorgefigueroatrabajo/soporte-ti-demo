@@ -1,4 +1,4 @@
-# Nexo Soporte — Demo pública
+# Sistema de Gestión de Soporte TI — Demo pública
 
 Versión demostrativa y completamente ficticia de una plataforma de gestión de soporte operativo.
 

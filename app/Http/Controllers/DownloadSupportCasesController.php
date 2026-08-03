@@ -55,8 +55,8 @@ class DownloadSupportCasesController extends Controller
     {
         $spreadsheet = new Spreadsheet;
         $spreadsheet->getProperties()
-            ->setCreator('Nexo Soporte')
-            ->setTitle('Plan de continuidad de Nexo Soporte')
+            ->setCreator('Sistema de Gestión de Soporte TI')
+            ->setTitle('Plan de continuidad del Sistema de Gestión de Soporte TI')
             ->setSubject('Casos, catálogos y conocimiento operativo')
             ->setDescription('Respaldo portable y editable sin credenciales ni imágenes');
         $spreadsheet->getDefaultStyle()->getFont()->setName('Aptos')->setSize(10);

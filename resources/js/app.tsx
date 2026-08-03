@@ -6,7 +6,7 @@ import AppLayout from '@/layouts/app-layout';
 import AuthLayout from '@/layouts/auth-layout';
 import SettingsLayout from '@/layouts/settings/layout';
 
-const appName = import.meta.env.VITE_APP_NAME || 'Nexo Soporte';
+const appName = import.meta.env.VITE_APP_NAME || 'Sistema de Gestión de Soporte TI';
 
 createInertiaApp({
     title: (title) => (title ? title + ' | ' + appName : appName),

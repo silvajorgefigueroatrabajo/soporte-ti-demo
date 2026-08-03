@@ -116,6 +116,6 @@ export default function Login({ status, canResetPassword }: Props) {
 }
 
 Login.layout = {
-    title: 'Explora Nexo Soporte',
+    title: 'Explora el Sistema de Gestión de Soporte TI',
     description: 'Todos los datos de esta demostración son ficticios.',
 };
