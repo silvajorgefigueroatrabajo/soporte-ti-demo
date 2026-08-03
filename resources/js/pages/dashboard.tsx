@@ -155,7 +155,7 @@ export default function Dashboard({
                         icon={Clock3}
                         tone="text-cyan-600 bg-cyan-500/10"
                         href={historyUrl(selectedMonth)}
-                        detail={`${summary.timedCases} casos con horario completo`}
+                        detail={`${summary.timedCases} ${caseLabel(summary.timedCases)} con horario completo`}
                     />
                     <Metric
                         title="Resueltos en 30 min"
@@ -622,7 +622,7 @@ function AnalyticsExplorer({
                                         )}
                                     </div>
                                 </div>
-                                <span>{item.cases} casos</span>
+                                <span>{item.cases} {caseLabel(item.cases)}</span>
                             </Link>
                         ))}
                     </div>
@@ -854,7 +854,7 @@ function DailyBars({ data, month }: { data: Datum[]; month: string }) {
                         style={{
                             height: Math.max((item.value / max) * 150, 8),
                         }}
-                        title={item.label + ': ' + item.value + ' casos'}
+                        title={item.label + ': ' + item.value + ' ' + caseLabel(item.value)}
                     />
                     <span className="text-xs text-muted-foreground">
                         {item.label}
@@ -864,6 +864,10 @@ function DailyBars({ data, month }: { data: Datum[]; month: string }) {
         </div>
     );
 }
+function caseLabel(value: number) {
+    return value === 1 ? 'caso' : 'casos';
+}
+
 function Metric({
     title,
     value,

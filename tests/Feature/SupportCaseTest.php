@@ -4,24 +4,6 @@ use App\Models\SupportCase;
 use App\Models\User;
 use Inertia\Testing\AssertableInertia as Assert;
 
-function validSupportCase(array $overrides = []): array
-{
-    return array_merge([
-        'reported_date' => '2026-07-25',
-        'reported_time' => '09:15',
-        'resolved_time' => '09:45',
-        'shift' => 'AM',
-        'reporter' => 'Silvana Alvarez',
-        'driver' => 'Juan Perez',
-        'center' => 'Centro Norte',
-        'case_type' => 'Aplicación móvil',
-        'description' => 'Portal se cierra.',
-        'status' => 'Resuelto',
-        'observations' => 'Se borraron datos y cache.',
-        'transport' => '5791716',
-    ], $overrides);
-}
-
 it('uses the authenticated user as technician even when a different value is submitted', function () {
     $user = User::factory()->create(['name' => 'Tecnico en sesion', 'shift' => 'AM']);
     $response = $this->actingAs($user)->post(route('support-cases.store'), [
