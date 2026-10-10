@@ -39,6 +39,7 @@ export function AppSidebar() {
     const { auth } = usePage<{ auth: Auth }>().props;
     const mainNavItems: NavItem[] = [
         { title: 'Dashboard', href: dashboard(), icon: LayoutDashboard },
+        { title: 'Laboratorio demo', href: '/showcase', icon: LayoutDashboard },
         ...(auth.user.role === 'technician'
             ? [
                   {

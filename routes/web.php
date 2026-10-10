@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 Route::inertia('/', 'welcome')->name('home');
 
 Route::middleware(['auth', 'verified'])->group(function () {
+    Route::inertia('showcase', 'showcase')->name('showcase');
     Route::get('dashboard', DashboardController::class)->name('dashboard');
     Route::middleware('admin')->group(function () {
         Route::get('activity', ActivityLogController::class)->name('activity.index');
